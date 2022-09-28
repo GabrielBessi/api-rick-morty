@@ -7,12 +7,10 @@ import Header from "./components/Header";
 
 function App() {
   const [charactersList, setCharactersList] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
-  console.log(page);
 
   useEffect(() => {
-    setLoading(true);
     fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
       .then((response) => response.json())
       .then((response) => setCharactersList(response.results))
@@ -27,7 +25,7 @@ function App() {
       <Header />
       <Buttons page={page} setPage={setPage} />
       {loading ? (
-        <span>Carregando</span>
+        <span className="span-style">Carregando</span>
       ) : (
         <>
           <Character charactersList={charactersList} />

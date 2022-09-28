@@ -1,8 +1,18 @@
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .img-style {
   display: flex;
 
-  width: 200px;
-  height: 150px;
+  width: 150px;
+  height: 90px;
 
-  border-radius: 100%;
+  margin-top: 0.7604562737642585vh;
+
+  border-radius: 100px;
+
+  animation: spin 5s infinite linear;
 }

@@ -18,12 +18,18 @@ export const CardStyle = styled.li`
 
       align-items: flex-start;
 
-      gap: 50px;
+      gap: 2.534854245880862vh;
     }
 
     p {
       font-size: 4.435994930291508vh;
       color: green;
+    }
+
+    @media (max-width: 465px) {
+      p {
+        font-size: 3.435994930291508vh;
+      }
     }
 
     .textSpecies {
@@ -32,10 +38,30 @@ export const CardStyle = styled.li`
     }
   }
 
+  @media (max-width: 375px) {
+    p {
+      font-size: 1.435994930291508vh;
+    }
+  }
+
   img {
     width: 13.89854065323141vw;
     height: 19.011406844106464vh;
     border-radius: 20px;
+  }
+
+  @media (max-width: 500px) {
+    img {
+      width: 100px;
+      height: 150px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    img {
+      width: 80px;
+      height: 100px;
+    }
   }
 
   .textStatus {

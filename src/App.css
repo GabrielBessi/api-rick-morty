@@ -5,5 +5,9 @@
   align-items: center;
   justify-content: center;
 
-  gap: 1.534854245880862vh;
+  gap: 3.534854245880862vh;
+}
+
+.span-style {
+  color: white;
 }
